@@ -8,7 +8,7 @@ function Home() {
   const [types, setTypes] = useState(["all"]);
   const [selectedType, setSelectedType] = useState("all");
   const pokemonUrl = "https://pokeapi.co/api/v2";
-  const limit = 15;
+  const limit = 20;
   // charement des types
   useEffect(() => {
     (async () => {
