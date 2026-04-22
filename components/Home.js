@@ -42,6 +42,7 @@ function Home() {
         slice.map((p) => fetch(p.pokemon.url).then((res) => res.json())),
       );
     }
+    poke.sort(() => Math.random() - 0.5);
     setPokemonData((prev) => (currentOffset === 0 ? poke : [...prev, ...poke]));
   };
   const loadMorePokemons = () => {
